@@ -1,0 +1,15 @@
+* {
+    font-family: 'Indie Flower', cursive;
+}
+
+header {
+    background: rgba(169, 243, 241, 0.395);
+    text-shadow: 0px 3px 3px aqua;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: rgba(169, 243, 241, 0.395);
+}
