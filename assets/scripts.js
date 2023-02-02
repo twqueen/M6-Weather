@@ -29,10 +29,10 @@ function getWeather (city) {
                     
                     for (i = 7; i <= data.list.length; i +=8) {
                        var displayForecast = $(
-                            '<div class="card">' + 
-                                '<div class="card-body">' +
+                            '<div class="card p-1 rounded-3">' + 
+                                '<div class="card-body p-2 border rounded-3">' +
                                     '<h5 class="card-title">' + dayjs(data.list[i].dt).format("MM/DD/YYYY") + '</h5>' +
-                                    '<img src="https://openweathermap.org/img/wn/' + data.list[i].weather[0].icon + '.png"></img>' +
+                                    '<img src="https://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png"></img>' +
                                     '<p class="card-text">Temp: ' + data.list[i].main.temp + '°C</p>' +
                                     '<p class="card-text">Humidity: ' + data.list[i].main.humidity + '%</p>' +
                                     '<p class="card-text"> Wind: ' + data.list[i].wind.speed + 'm/s</p>' +
@@ -110,10 +110,10 @@ function getWeather2 (city) {
                     
                     for (i = 7; i <= data.list.length; i +=8) {
                        var displayForecast = $(
-                            '<div class="card">' + 
-                                '<div class="card-body">' +
+                            '<div class="card p-1 rounded-3">' + 
+                                '<div class="card-body p-2 border rounded-3">' +
                                     '<h5 class="card-title">' + dayjs(data.list[i].dt).format("MM/DD/YYYY") + '</h5>' +
-                                    '<img src="https://openweathermap.org/img/wn/' + data.list[i].weather[0].icon + '.png"></img>' +
+                                    '<img src="https://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png"></img>' +
                                     '<p class="card-text">Temp: ' + data.list[i].main.temp + '°C</p>' +
                                     '<p class="card-text">Humidity: ' + data.list[i].main.humidity + '%</p>' +
                                     '<p class="card-text"> Wind: ' + data.list[i].wind.speed + 'm/s</p>' +

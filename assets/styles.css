@@ -13,3 +13,7 @@ footer {
     width: 100%;
     background: rgba(169, 243, 241, 0.395);
 }
+
+div {
+    background-color: lavenderblush;
+}
