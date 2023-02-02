@@ -31,7 +31,7 @@ function getWeather (city) {
                        var displayForecast = $(
                             '<div class="card p-1 rounded-3">' + 
                                 '<div class="card-body p-2 border rounded-3">' +
-                                    '<h5 class="card-title">' + dayjs(data.list[i].dt).format("MM/DD/YYYY") + '</h5>' +
+                                    '<h5 class="card-title">' + dayjs(data.list[i].dt * 1000).format("MM/DD/YYYY") + '</h5>' +
                                     '<img src="https://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png"></img>' +
                                     '<p class="card-text">Temp: ' + data.list[i].main.temp + '°C</p>' +
                                     '<p class="card-text">Humidity: ' + data.list[i].main.humidity + '%</p>' +
@@ -112,7 +112,7 @@ function getWeather2 (city) {
                        var displayForecast = $(
                             '<div class="card p-1 rounded-3">' + 
                                 '<div class="card-body p-2 border rounded-3">' +
-                                    '<h5 class="card-title">' + dayjs(data.list[i].dt).format("MM/DD/YYYY") + '</h5>' +
+                                    '<h5 class="card-title">' + dayjs(data.list[i].dt * 1000).format("MM/DD/YYYY") + '</h5>' +
                                     '<img src="https://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png"></img>' +
                                     '<p class="card-text">Temp: ' + data.list[i].main.temp + '°C</p>' +
                                     '<p class="card-text">Humidity: ' + data.list[i].main.humidity + '%</p>' +
